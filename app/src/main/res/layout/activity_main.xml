@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.xiamo.marqueelib.MarqueeTextViewXin
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:text="荣华风雪漫天 前尘如烟 提笔难书写 阁上灵犀一点将 命运相牵 寒夜清辉月下 的残艳 生死之别一念湮 所谓情深缘浅 终作恨绵绵"
+        android:background="@color/black"
+        app:marqueeRepeat="fillLoop"
+        android:textSize="14sp"
+        android:id="@+id/marqueeViewXin"
+        app:marqueeSpeed="5"
+        android:layout_height="30dp"/>
+
+    <com.xiamo.marqueelib.sun.MarqueeViewSun
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/marqueeViewSun"
+        android:background="@color/black"
+        app:mvAnimDuration="1000"
+        app:mvDirection="bottom_to_top"
+        app:mvInterval="3000"
+        app:mvTextColor="@color/white"
+        app:mvTextSize="14sp"
+        app:mvSingleLine="true"/>
+
+    <com.xiamo.marqueelib.gong.SimpleMarqueeViewGong
+        android:id="@+id/simpleMarqueeView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:flipInterval="2500"
+        android:background="@color/black"
+        android:inAnimation="@anim/anim_right_in"
+        android:outAnimation="@anim/anim_left_out"
+        app:marqueeAnimDuration="2000"
+        app:smvTextColor="@color/white"
+        app:smvTextEllipsize="end"
+        app:smvTextGravity="center_vertical"
+        app:smvTextSingleLine="true"
+        app:smvTextSize="15sp" />
+
+</LinearLayout>
