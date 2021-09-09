@@ -1,4 +1,4 @@
-# MarqueeLib 多个跑马灯lib混合打包
+# MarqueeLib 多个跑马灯lib混合打包 ![](https://jitpack.io/v/csfwff/MarqueeLib.svg)
 
 ## 起因
  因为要用到跑马灯，所以搜索一番
@@ -16,3 +16,20 @@
     3. https://gitee.com/zjianxin/MarqueeTextView
         对应 MarqueeTextViewXin
    具体使用请前往对应链接
+   
+   ## 使用
+   项目根目录的build.gradle 或者是 setting.gradle
+   ```
+   allprojects {
+   		repositories {
+   			...
+   			maven { url 'https://jitpack.io' }
+   		}
+   	}
+   ```
+ module的 build.gradle
+```
+ dependencies {
+	        implementation 'com.github.csfwff:MarqueeLib:Tag'
+	}
+```
